@@ -6,5 +6,6 @@ app.get("/", (req, res) => res.send("CI/CD Pipeline Working "));
 
 test("GET / should return success", async () => {
   const res = await request(app).get("/");
-  expect(res.text).toBe("CI/CD Pipeline Working ");
+  expect(res.text).toBe("Wrong Output");
+
 });
